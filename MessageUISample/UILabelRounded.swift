@@ -14,10 +14,8 @@ class UILabelRounded: UILabel {
   @IBInspectable var rightInset: CGFloat = 0.0
 
   override func drawText(in rect: CGRect) {
-//    let insets = UIEdgeInsets(top: -20, left: leftInset, bottom: bottomInset, right: rightInset)
     let insets = UIEdgeInsets(top: topInset * -1, left: leftInset, bottom: bottomInset, right: rightInset * -1)
-//    let insets = UIEdgeInsets(top: 1, left: leftInset, bottom: bottomInset, right: rightInset)
-    print("UILabelRounded insets: \(insets)")
+//    print("UILabelRounded insets: \(insets)")
     super.drawText(in: rect.inset(by: insets))
   }
 
@@ -37,8 +35,8 @@ class UILabelRounded: UILabel {
   @objc
   func injected() {
     print("I've been injected: \(self)")
-
   }
+  
   @IBInspectable var borderColor: UIColor = UIColor.white {
     didSet {
       layer.borderColor = borderColor.cgColor

@@ -15,7 +15,6 @@ class UILabelRounded: UILabel {
 
   override func drawText(in rect: CGRect) {
     let insets = UIEdgeInsets(top: topInset * -1, left: leftInset, bottom: bottomInset, right: rightInset * -1)
-//    print("UILabelRounded insets: \(insets)")
     super.drawText(in: rect.inset(by: insets))
   }
 

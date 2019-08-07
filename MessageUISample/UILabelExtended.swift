@@ -18,7 +18,9 @@ class UILabelExtended: UILabel {
       hasText = true
     }
 
-    return hasText ? UIEdgeInsets(top: inset.height, left: inset.width, bottom: inset.height, right: inset.width) : UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+    return hasText ?
+      UIEdgeInsets(top: inset.height, left: inset.width, bottom: inset.height, right: inset.width)
+      : UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
   }
 
   @IBInspectable var borderColor: UIColor = UIColor.white {
@@ -45,18 +47,14 @@ class UILabelExtended: UILabel {
   }
 
   override var intrinsicContentSize: CGSize {
-    let superContentSize = super.intrinsicContentSize
-    let p = padding
-    let width = superContentSize.width + p.left + p.right
-    let heigth = superContentSize.height + p.top + p.bottom
-    return CGSize(width: width, height: heigth)
+    let size = super.intrinsicContentSize
+    let pad = padding
+    return CGSize(width: size.width + pad.left + pad.right, height: size.height + pad.top + pad.bottom)
   }
 
   override func sizeThatFits(_ size: CGSize) -> CGSize {
-    let superSizeThatFits = super.sizeThatFits(size)
-    let p = padding
-    let width = superSizeThatFits.width + p.left + p.right
-    let heigth = superSizeThatFits.height + p.top + p.bottom
-    return CGSize(width: width, height: heigth)
+    let size = super.sizeThatFits(size)
+    let pad = padding
+    return CGSize(width: size.width + pad.left + pad.right, height: size.height + pad.top + pad.bottom)
   }
 }

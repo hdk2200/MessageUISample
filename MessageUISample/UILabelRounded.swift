@@ -1,10 +1,9 @@
 //
-// Copyright (c) 2019, mycompany All rights reserved. 
+// Copyright (c) 2019, mycompany All rights reserved.
 //
 
 import Foundation
 import UIKit
-
 
 @IBDesignable
 class UILabelRounded: UILabel {
@@ -44,18 +43,14 @@ class UILabelRounded: UILabel {
 
   override func sizeThatFits(_ size: CGSize) -> CGSize {
     var size = super.sizeThatFits(size)
-    size.width += leftInset  + rightInset
+    size.width += leftInset + rightInset
     size.height += topInset + bottomInset
     return size
   }
-
 
   // InjectionIII debug code.
   @objc
   func injected() {
     print("I've been injected: \(self)")
   }
-
-
-  
 }

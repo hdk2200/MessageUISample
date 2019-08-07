@@ -28,7 +28,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LZW-4j-BKr" userLabel="messge">
                                 <rect key="frame" x="0.0" y="606" width="414" height="128"/>
                                 <subviews>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label test." textAlignment="natural" lineBreakMode="characterWrap" baselineAdjustment="alignBaselines" minimumScaleFactor="0.10000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="nh4-BH-0Sa" userLabel="Label" customClass="UILabelExtended" customModule="MessageUISample">
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label test." textAlignment="natural" lineBreakMode="characterWrap" baselineAdjustment="alignBaselines" minimumScaleFactor="0.10000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="nh4-BH-0Sa" userLabel="Label" customClass="UILabelRounded" customModule="MessageUISample" customModuleProvider="target">
                                         <rect key="frame" x="16" y="8" width="382" height="112"/>
                                         <color key="backgroundColor" white="0.26499138752075091" alpha="0.8224261558219178" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
@@ -45,6 +45,18 @@
                                                 <real key="value" value="1"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="leftInset">
+                                                <real key="value" value="24"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="rightInset">
+                                                <real key="value" value="24"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="bottomInset">
+                                                <real key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="topInset">
                                                 <real key="value" value="8"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
@@ -70,10 +82,6 @@
                                     <action selector="onTapShowText:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kHL-nT-uCg"/>
                                 </connections>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ykB-ce-eCv">
-                                <rect key="frame" x="0.0" y="106" width="414" height="269"/>
-                                <color key="backgroundColor" red="0.57045853140000002" green="0.57047235969999999" blue="0.57046490910000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </stackView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label test." textAlignment="natural" lineBreakMode="characterWrap" baselineAdjustment="alignBaselines" minimumScaleFactor="0.10000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="ytg-uk-z3h" userLabel="labelCenter" customClass="UILabelRounded" customModule="MessageUISample" customModuleProvider="target">
                                 <rect key="frame" x="159" y="561.5" width="96" height="28.5"/>
                                 <color key="backgroundColor" white="0.26499138750000001" alpha="0.8224261558" colorSpace="calibratedWhite"/>
@@ -116,15 +124,11 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="f7D-Uj-wQ4" secondAttribute="bottom" id="Mbk-g7-3No"/>
                             <constraint firstItem="f7D-Uj-wQ4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="NGm-Ze-Wg5"/>
                             <constraint firstItem="ytg-uk-z3h" firstAttribute="width" relation="lessThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.9" id="S5w-gW-FzV"/>
-                            <constraint firstItem="ykB-ce-eCv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="UjC-GM-o4v"/>
                             <constraint firstItem="LZW-4j-BKr" firstAttribute="top" secondItem="ytg-uk-z3h" secondAttribute="bottom" constant="16" id="b9u-Rs-mKg"/>
-                            <constraint firstItem="ykB-ce-eCv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="62" id="cKG-bm-PeS"/>
                             <constraint firstItem="f7D-Uj-wQ4" firstAttribute="top" secondItem="LZW-4j-BKr" secondAttribute="bottom" id="ili-AV-3C3"/>
                             <constraint firstItem="LZW-4j-BKr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="jJA-eb-p1H"/>
                             <constraint firstItem="ytg-uk-z3h" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="rfX-zo-Bl2"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ykB-ce-eCv" secondAttribute="trailing" id="u5N-cy-xZv"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="f7D-Uj-wQ4" secondAttribute="trailing" id="unU-0L-BNR"/>
-                            <constraint firstItem="ykB-ce-eCv" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.3" id="z4L-g4-mnZ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -132,7 +136,6 @@
                         <outlet property="label" destination="nh4-BH-0Sa" id="lV3-32-2Ky"/>
                         <outlet property="labelCenter" destination="ytg-uk-z3h" id="TYB-pC-EFz"/>
                         <outlet property="messageView" destination="LZW-4j-BKr" id="1ml-r0-IiU"/>
-                        <outlet property="stackView" destination="ykB-ce-eCv" id="mJ6-R4-UU0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

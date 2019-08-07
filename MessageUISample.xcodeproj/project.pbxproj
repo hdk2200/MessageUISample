@@ -13,6 +13,7 @@
 		2089460022F94F0E0044063F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 208945FF22F94F0E0044063F /* Assets.xcassets */; };
 		2089460322F94F0E0044063F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2089460122F94F0E0044063F /* LaunchScreen.storyboard */; };
 		2089460E22FA43D30044063F /* UILabelRounded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2089460D22FA43D30044063F /* UILabelRounded.swift */; };
+		2089461022FAB92A0044063F /* UIView+TimerDisappear.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2089460F22FAB92A0044063F /* UIView+TimerDisappear.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		2089460222F94F0E0044063F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2089460422F94F0E0044063F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2089460D22FA43D30044063F /* UILabelRounded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelRounded.swift; sourceTree = "<group>"; };
+		2089460F22FAB92A0044063F /* UIView+TimerDisappear.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+TimerDisappear.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,21 +58,14 @@
 		208945F722F94F0C0044063F /* MessageUISample */ = {
 			isa = PBXGroup;
 			children = (
-				2089460A22F951DA0044063F /* MessageUISample */,
+				2089460422F94F0E0044063F /* Info.plist */,
 				208945F822F94F0C0044063F /* AppDelegate.swift */,
+				2089460D22FA43D30044063F /* UILabelRounded.swift */,
+				2089460F22FAB92A0044063F /* UIView+TimerDisappear.swift */,
 				208945FA22F94F0C0044063F /* ViewController.swift */,
-				208945FC22F94F0C0044063F /* Main.storyboard */,
 				208945FF22F94F0E0044063F /* Assets.xcassets */,
 				2089460122F94F0E0044063F /* LaunchScreen.storyboard */,
-				2089460422F94F0E0044063F /* Info.plist */,
-				2089460D22FA43D30044063F /* UILabelRounded.swift */,
-			);
-			path = MessageUISample;
-			sourceTree = "<group>";
-		};
-		2089460A22F951DA0044063F /* MessageUISample */ = {
-			isa = PBXGroup;
-			children = (
+				208945FC22F94F0C0044063F /* Main.storyboard */,
 			);
 			path = MessageUISample;
 			sourceTree = "<group>";
@@ -146,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2089461022FAB92A0044063F /* UIView+TimerDisappear.swift in Sources */,
 				208945FB22F94F0C0044063F /* ViewController.swift in Sources */,
 				208945F922F94F0C0044063F /* AppDelegate.swift in Sources */,
 				2089460E22FA43D30044063F /* UILabelRounded.swift in Sources */,

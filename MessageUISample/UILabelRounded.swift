@@ -13,6 +13,24 @@ class UILabelRounded: UILabel {
   @IBInspectable var leftInset: CGFloat = 0.0
   @IBInspectable var rightInset: CGFloat = 0.0
 
+  @IBInspectable var borderColor: UIColor = UIColor.white {
+    didSet {
+      layer.borderColor = borderColor.cgColor
+    }
+  }
+
+  @IBInspectable var borderWidth: CGFloat = 2.0 {
+    didSet {
+      layer.borderWidth = borderWidth
+    }
+  }
+
+  @IBInspectable var cornerRadius: CGFloat = 0.0 {
+    didSet {
+      layer.cornerRadius = cornerRadius
+    }
+  }
+
   override func drawText(in rect: CGRect) {
     let insets = UIEdgeInsets(top: topInset * -1, left: leftInset, bottom: bottomInset, right: rightInset * -1)
     super.drawText(in: rect.inset(by: insets))
@@ -31,26 +49,13 @@ class UILabelRounded: UILabel {
     return size
   }
 
+
+  // InjectionIII debug code.
   @objc
   func injected() {
     print("I've been injected: \(self)")
   }
+
+
   
-  @IBInspectable var borderColor: UIColor = UIColor.white {
-    didSet {
-      layer.borderColor = borderColor.cgColor
-    }
-  }
-
-  @IBInspectable var borderWidth: CGFloat = 2.0 {
-    didSet {
-      layer.borderWidth = borderWidth
-    }
-  }
-
-  @IBInspectable var cornerRadius: CGFloat = 0.0 {
-    didSet {
-      layer.cornerRadius = cornerRadius
-    }
-  }
 }

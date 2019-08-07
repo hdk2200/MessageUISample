@@ -12,25 +12,27 @@ class ViewController: UIViewController {
   @IBOutlet weak var stackView: UIStackView!
   @IBOutlet weak var labelCenter: UILabelRounded!
 
+//  var labels:[UILabelRounded] = []
   var labels:[UILabelRounded] = []
+
   override func viewDidLoad() {
     super.viewDidLoad()
     messageView.isHidden = true
-    //    createLabels(num:20)
   }
 
   @objc
   func injected() {
     print("I've been injected: \(self)")
-    //createLabels(num:20)
-    //    labelTest.topInset = 20
     showText(text: "injected", interval: 2.0)
   }
 
-  func createLabels(num:Int){
+  func removeDynamicLabels(){
     labels.forEach() { $0.removeFromSuperview()}
-
     labels.removeAll()
+  }
+
+  func createLabels(num:Int){
+    removeDynamicLabels()
 
     for x in 0..<3 {
       var lastY:CGFloat = 120

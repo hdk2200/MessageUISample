@@ -12,3 +12,9 @@ This project includes a custom UILabel class that can add rounded corners, borde
 - Override intrinsicContentSize and return the correct rectangle for use in Storyboard.
 
 - Override sizeThatFits to return the correct rectangle so that it works correctly when using sizeToFit in code.
+
+# warning
+
+This example not worked in multi line label.(when numberOfLines is not 1.)
+
+

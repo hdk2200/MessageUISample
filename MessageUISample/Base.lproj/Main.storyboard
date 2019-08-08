@@ -83,7 +83,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label test." textAlignment="natural" lineBreakMode="characterWrap" baselineAdjustment="alignBaselines" minimumScaleFactor="0.10000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="ytg-uk-z3h" userLabel="labelCenter" customClass="UILabelRounded" customModule="MessageUISample" customModuleProvider="target">
-                                <rect key="frame" x="159" y="561.5" width="96" height="28.5"/>
+                                <rect key="frame" x="135" y="553.5" width="144" height="36.5"/>
                                 <color key="backgroundColor" white="0.26499138750000001" alpha="0.8224261558" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -102,16 +102,16 @@
                                         <real key="value" value="8"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="topInset">
-                                        <real key="value" value="4"/>
+                                        <real key="value" value="8"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="bottomInset">
-                                        <real key="value" value="4"/>
+                                        <real key="value" value="8"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="leftInset">
-                                        <real key="value" value="8"/>
+                                        <real key="value" value="32"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="rightInset">
-                                        <real key="value" value="8"/>
+                                        <real key="value" value="32"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </label>

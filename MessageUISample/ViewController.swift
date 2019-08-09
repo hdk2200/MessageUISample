@@ -42,13 +42,13 @@ class ViewController: UIViewController {
           self.labels.append(lbl)
           lbl.font = UIFont.systemFont(ofSize: 10)
           lbl.contentMode = .left
-          lbl.text = "Label \(idx + 1)"
+          lbl.text = "Label\n\(idx + 1)"
           lbl.backgroundColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.8004066781)
           lbl.textColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
           lbl.layer.borderColor = #colorLiteral(red: 0.8078431487, green: 0.02745098062, blue: 0.3333333433, alpha: 1)
           lbl.layer.borderWidth = 0.5
 
-          let padding = CGFloat(idx * 2)
+          let padding = CGFloat(idx)
           lbl.borderWidth = 1.0 * CGFloat(col)
           lbl.borderColor = #colorLiteral(red: 0.8078431487, green: 0.02745098062, blue: 0.3333333433, alpha: 1)
           lbl.cornerRadius = 4 * CGFloat(col)
@@ -57,8 +57,9 @@ class ViewController: UIViewController {
           lbl.leftInset = padding
           lbl.rightInset = padding
           lbl.bottomInset = padding
-          lbl.numberOfLines = 1
-          lbl.lineBreakMode = .byCharWrapping
+          lbl.numberOfLines = 0
+          lbl.lineBreakMode = .byTruncatingTail
+          lbl.textAlignment = .center
           lbl.sizeToFit()
           let lblFrame = lbl.bounds
 

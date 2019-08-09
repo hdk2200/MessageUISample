@@ -19,14 +19,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f7D-Uj-wQ4">
-                                <rect key="frame" x="0.0" y="734" width="414" height="128"/>
+                                <rect key="frame" x="0.0" y="830" width="414" height="32"/>
                                 <color key="backgroundColor" red="1" green="0.25077319720000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="128" id="UYi-NG-tDg"/>
+                                    <constraint firstAttribute="height" constant="32" id="UYi-NG-tDg"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LZW-4j-BKr" userLabel="messge">
-                                <rect key="frame" x="0.0" y="606" width="414" height="128"/>
+                                <rect key="frame" x="0.0" y="702" width="414" height="128"/>
                                 <subviews>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label test." textAlignment="natural" lineBreakMode="characterWrap" baselineAdjustment="alignBaselines" minimumScaleFactor="0.10000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="nh4-BH-0Sa" userLabel="Label" customClass="UILabelRounded" customModule="MessageUISample" customModuleProvider="target">
                                         <rect key="frame" x="16" y="8" width="382" height="112"/>
@@ -67,9 +67,9 @@
                                     <constraint firstItem="nh4-BH-0Sa" firstAttribute="centerX" secondItem="LZW-4j-BKr" secondAttribute="centerX" id="0QF-BY-8FL"/>
                                     <constraint firstItem="nh4-BH-0Sa" firstAttribute="top" secondItem="LZW-4j-BKr" secondAttribute="top" constant="8" id="1ow-hV-pEy"/>
                                     <constraint firstAttribute="bottom" secondItem="nh4-BH-0Sa" secondAttribute="bottom" constant="8" id="3fb-Sb-Q8z"/>
-                                    <constraint firstItem="nh4-BH-0Sa" firstAttribute="leading" secondItem="LZW-4j-BKr" secondAttribute="leading" constant="16" id="4e9-qK-GI6"/>
+                                    <constraint firstItem="nh4-BH-0Sa" firstAttribute="leading" relation="lessThanOrEqual" secondItem="LZW-4j-BKr" secondAttribute="leading" constant="16" id="4e9-qK-GI6"/>
                                     <constraint firstAttribute="height" constant="128" id="Dgk-mz-4yz"/>
-                                    <constraint firstAttribute="trailing" secondItem="nh4-BH-0Sa" secondAttribute="trailing" constant="16" id="ISs-WG-c8y"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="nh4-BH-0Sa" secondAttribute="trailing" constant="16" id="ISs-WG-c8y"/>
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0GO-CQ-hLf">
@@ -82,8 +82,8 @@
                                     <action selector="onTapShowText:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kHL-nT-uCg"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label test." textAlignment="natural" lineBreakMode="characterWrap" baselineAdjustment="alignBaselines" minimumScaleFactor="0.10000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="ytg-uk-z3h" userLabel="labelCenter" customClass="UILabelRounded" customModule="MessageUISample" customModuleProvider="target">
-                                <rect key="frame" x="135" y="553.5" width="144" height="36.5"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label test." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.10000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="ytg-uk-z3h" userLabel="labelCenter" customClass="UILabelRounded" customModule="MessageUISample" customModuleProvider="target">
+                                <rect key="frame" x="135" y="649.5" width="144" height="36.5"/>
                                 <color key="backgroundColor" white="0.26499138750000001" alpha="0.8224261558" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
